@@ -1,0 +1,9 @@
+git
+python@3.11
+node
+cmake
+ffmpeg
+gh
+cask:visual-studio-code
+cask:docker
+cask:postman
