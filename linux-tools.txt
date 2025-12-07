@@ -1,0 +1,9 @@
+git
+python3
+python3-pip
+nodejs
+npm
+docker.io
+cmake
+ffmpeg
+gh
