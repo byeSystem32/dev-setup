@@ -1,0 +1,9 @@
+git
+python
+node
+docker
+docker-desktop
+cmake
+ffmpeg
+vscode
+gh
