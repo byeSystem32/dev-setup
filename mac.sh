@@ -8,14 +8,16 @@ if ! command -v brew &> /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-echo "Installing CLI tools..."
+echo "Installing tools from mac-tools.txt..."
 while read -r tool; do
-  brew install "$tool"
-done < mac-tools.txt
+  [[ -z "$tool" || "$tool" =~ ^
 
-echo "Installing GUI apps (casks)..."
-while read -r app; do
-  brew install --cask "$app"
+  if [[ "$tool" == cask:* ]]; then
+    app="${tool#cask:}"
+    brew install --cask "$app"
+  else
+    brew install "$tool"
+  fi
 done < mac-tools.txt
 
 echo "MacOS Dev Environment Installed"
