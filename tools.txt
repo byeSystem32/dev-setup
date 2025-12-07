@@ -1,9 +1,8 @@
-git
-python
-node
-docker
-docker-desktop
-cmake
-ffmpeg
-vscode
-gh
+Git.Git
+Python.Python.3.11
+OpenJS.NodeJS
+Docker.DockerDesktop
+Kitware.CMake
+Gyan.FFmpeg
+Microsoft.VisualStudioCode
+GitHub.cli
